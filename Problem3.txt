@@ -1,0 +1,76 @@
+The runtime results vary based on the order of the size of the input but are in
+line with expectations, with O(1) remaining relatively flat and O(2^n) starting
+smaller before growing far beyond O(n^3) after the point of intersection.
+
+The runtime results for the constant, cubic, and exp fragments are as follows:
+
+constant must be O(1):
+
+constant(1):  1453 nanoseconds
+constant(2):  412 nanoseconds
+constant(3):  194 nanoseconds
+constant(4):  192 nanoseconds
+constant(5):  286 nanoseconds
+constant(6):  196 nanoseconds
+constant(7):  185 nanoseconds
+constant(8):  180 nanoseconds
+constant(9):  216 nanoseconds
+constant(10): 174 nanoseconds
+constant(11): 188 nanoseconds
+constant(12): 169 nanoseconds
+constant(13): 205 nanoseconds
+constant(14): 184 nanoseconds
+constant(15): 182 nanoseconds
+constant(16): 198 nanoseconds
+constant(17): 221 nanoseconds
+constant(18): 203 nanoseconds
+constant(19): 210 nanoseconds
+constant(20): 195 nanoseconds
+
+
+cubic must be O(n^3):
+
+cubic(1):  37603 nanoseconds
+cubic(2):  1113 nanoseconds
+cubic(3):  1553 nanoseconds
+cubic(4):  2615 nanoseconds
+cubic(5):  4564 nanoseconds
+cubic(6):  7509 nanoseconds
+cubic(7):  11418 nanoseconds
+cubic(8):  16625 nanoseconds
+cubic(9):  23400 nanoseconds
+cubic(10): 31510 nanoseconds
+cubic(11): 41369 nanoseconds
+cubic(12): 53450 nanoseconds
+cubic(13): 67613 nanoseconds
+cubic(14): 84182 nanoseconds
+cubic(15): 102761 nanoseconds
+cubic(16): 124530 nanoseconds
+cubic(17): 148824 nanoseconds
+cubic(18): 176258 nanoseconds
+cubic(19): 228229 nanoseconds
+cubic(20): 254016 nanoseconds
+
+
+exp must be O(2^n):
+
+exp(1):  4906 nanoseconds
+exp(2):  608 nanoseconds
+exp(3):  817 nanoseconds
+exp(4):  1234 nanoseconds
+exp(5):  2388 nanoseconds
+exp(6):  4633 nanoseconds
+exp(7):  9881 nanoseconds
+exp(8):  17743 nanoseconds
+exp(9):  32178 nanoseconds
+exp(10): 72631 nanoseconds
+exp(11): 150893 nanoseconds
+exp(12): 294367 nanoseconds
+exp(13): 592650 nanoseconds
+exp(14): 1161467 nanoseconds
+exp(15): 2232363 nanoseconds
+exp(16): 4445224 nanoseconds
+exp(17): 8398757 nanoseconds
+exp(18): 18008968 nanoseconds
+exp(19): 36607072 nanoseconds
+exp(20): 76327663 nanoseconds
